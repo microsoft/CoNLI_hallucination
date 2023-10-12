@@ -13,7 +13,7 @@ If you find the repository or CoNLI helpful, please cite the following paper
 ```bibtex
 @article{lei2023chain,
   title={Chain of Natural Language Inference for Reducing Large Language Model Ungrounded Hallucinations},
-  author={Lei, Deren and Li, Yaxi and Wang, Mingyu and Yun, Vincent and Ching, Emily and Kamal, Eslam and others},
+  author={Lei, Deren and Li, Yaxi and Hu, Mengya and Wang, Mingyu and Yun, Vincent and Ching, Emily and Kamal, Eslam and others},
   journal={arXiv preprint arXiv:2310.03951},
   year={2023}
 }
