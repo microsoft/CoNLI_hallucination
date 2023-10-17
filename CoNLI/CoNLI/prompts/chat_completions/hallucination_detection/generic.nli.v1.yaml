@@ -1,0 +1,85 @@
+- role: system
+  content: |
+        You are a helpful assistant. You will be presented with a premise and a few hypothesis about that premise. 
+        A hypothesis is usually in forms of a sentence.
+        A premise is usually a long source document or transcript.
+
+        You need to decide whether the hypothesis is entailed by the premise by choosing one of the following: 
+        1. Entailment: The hypothesis follows logically from the information contained in the premise. Mark [C].
+        2. Contradiction: The hypothesis is logically false from the information contained in the premise. Mark [I].
+        3. Neutral: It is not possible to determine whether the hypothesis is true or false without further information. Mark [I].
+
+        Read the passage of information thoroughly and select the correct answer either [C] or [I]. Read the premise thoroughly to ensure you know what the premise entails.
+
+        For each judgement, think step by step with following guidelines:
+        1. Repeat hypothesis you are judging.
+        2. Find the part of the premise that is related to the hypothesis. If we can not find any, it is not factually correct and thus should be marked as [I].
+        3. If we found related part in the premise but it is factually not aligned with the hypothesis, we also mark [I]. If it is factually aligned, we mark it [C].
+        Try your best to give the right answer.
+
+        Rules:
+        * You may assume that today is March 24th, 2023. Use this date when analyzing dates and time spans.
+        * Please ignore the age when judging entailment.  If the age is incorrect, and everything else is correct, it is still a factually correct hypothesis that should be marked [C].
+        * If the hypothesis only has less than 3 words with no context, mark [C] if you can find those words in the premise without investigating the context.
+        * Please only do reasoning and judge the factual correctness of the hypothesis only. Ignore syntax related issues.
+        * If 
+        * Make sure your logic and reasoning are rigorous, intelligent, and defensible. 
+        * Make conservative judgement. Only mark [I] when you are very confident.
+        * Write down the reasoning process first, and then make final conclusion. Mark each hypothesis either [C] or [I].
+        * Write the answers with the original hypothesis ordered format.
+
+- role: system
+  name: example_user
+  content: |
+        Let's try it.  I'll give you a premise and a few hypothesis.
+
+        Premise:
+        The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.
+
+        Hypothesis:
+        (0). Oscar is presented every other two years.
+        (1). Oscar is very important awards in the entertainment industry in the United States. And it's also significant worldwide.
+        (3). Will Smith won the 2022 Oscar.
+
+- role: system
+  name: example_assistant
+  content: |
+        Answer:
+        (0). Oscar is presented every other two years. <reason> premise reference: "They are presented annually by the Academy of Motion Picture Arts and Sciences", thus it is not presented every other two year. It's contradiction. </reason> [I]
+        (1). Oscar is very important awards in the entertainment industry in the United States. And it's also significant worldwide. <reason> premise reference: "The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide." It's entailment." </reason> [C]
+        (2). Will Smith won the 2022 Oscar.<reason> premise reference: None. The transcript didn't mention information related to Will Smith winning Oscar. It's neutral. </reason> [I]
+
+- role: system
+  name: example_user
+  content: |
+        Let's try it again.  I'll give you a new premise unrelated to previous examples and a few hypothesis. This time there are some tagged [ words ] in the hypothesis. Make judgement and reasoning focusing on the tagged [ words ].
+        
+        Premise:
+        In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.
+
+        Hypothesis:
+        (0). In Quebec, an allophone is a resident, usually an [ immigrant ], whose mother tongue or home language is not French.
+        (1). In Quebec, an allophone is a resident whose home language is not [ French ].
+        (2). In Quebec, an [ foreigner ] is a resident whose home language is not French.
+
+- role: system
+  name: example_assistant
+  content: |
+        Answer:
+        (0). In Quebec, an allophone is a resident, usually an [ immigrant ], whose mother tongue or home language is not French. <reason> premise reference: "In Quebec, an allophone is a resident, usually an immigrant." Thus the tagged word [ immigrant ] is an entailment. </reason> [C]
+        (1). In Quebec, an allophone is a resident whose home language is not [ French ] <reason> premise reference: "an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English." French is a subset of "French nor English". The tagged word [ French ] is an entailment. </reason> [C]
+        (2). In Quebec, an [ foreigner ] is a resident whose home language is not French. <reason> premise refernece: "an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English." The premise talks about allophone not foreigner. The tagged word [ allophone ] is an contradiction. </reason> [I]
+
+- role: user
+  content: | 
+        Now let's try one more time.
+        I'll give you a new and unique premise and the previous examples do not apply. I'll also give you a few new hypothesis about the premise.
+        Use all of the instructions given above follow the exact format as above examples to judge each hypothesis. Whether it's contradiction, entailment or neutral, and mark them as either [C] or [I]
+
+        Premise:
+        {{Source}}
+
+        Hypothesis:
+        {{Hypothesis}}
+
+        Begin your answer with "Answer:\n"

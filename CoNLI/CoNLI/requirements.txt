@@ -1,0 +1,13 @@
+rouge_score
+sacrebleu
+openai
+azure.identity
+scikit-learn
+transformers
+torch
+spacy
+pandas
+nltk
+hydra-core
+azure-keyvault-secrets
+azure-ai-textanalytics
