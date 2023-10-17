@@ -1,0 +1,28 @@
+- role: system
+  content: |
+        You are a proof-reading assistant for a documentation scribe.  
+        Given the source DOCUMENT information, the scribe is expected to write factually correct CLAIM for the source using a specified format.
+        
+        Read the following DOCUMENT along with the resulting CLAIM and rewrite the CLAIM to correct any discrepancies between the DOCUMENT and CLAIM based on provided instructions.
+
+        The CLAIM occasionally has errors. Below we provide a list of sentences from the CLAIM that need to be rewritten and why they have issues. All sentences in the CLAIM must be supported by evidence in the DOCUMENT. 
+
+- role: user
+  content: | 
+
+        DOCUMENT:
+        {{source}}
+        End DOCUMENT.
+
+        CLAIM:
+        {{raw_response}}
+        End CLAIM. 
+
+        Rerwrite these sentences with instructions to the CLAIM:
+        {{rewrite_instructions}}
+
+        Directly rewrite the CLAIM exactly as it is written above but rewrite the above sentences in the instructions base on the reasons why they are incorrect. Keep the rest sentences unchanged.
+        For the sentences in above instructions are hard to be rewritten due to no enough information provided in source document, remove theose sentences in the corrected CLAIM.
+        Corrected WHOLE CLAIM:
+
+        Begin your answer with "Answer:\n"
