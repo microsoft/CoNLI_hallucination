@@ -10,7 +10,7 @@ class DataLoader:
     def __init__(self,
                  hypothesis: str,
                  src_folder: str,
-                 testmode: int = 0) -> None:
+                 test_mode: int = 0) -> None:
 
         self._hypothesis = {}
         self._src_docs = {}
@@ -26,7 +26,7 @@ class DataLoader:
                 hypothesis)  # hypothesis here is sentences
         else:
             raise ValueError(
-                '--inputhypothesis is incorrect. not a valid path or not a tsv file.')
+                '--input_hypothesis is incorrect. not a valid path or not a tsv file.')
 
         print(f'Hypotheses Found: {len(self._hypothesis_preproc_sentences)}')
 
@@ -40,10 +40,10 @@ class DataLoader:
         self.__validate()
         self._data_ids = sorted(self._data_ids)
 
-        if testmode > 0:
-            self._data_ids = self._data_ids[0:testmode]
+        if test_mode > 0:
+            self._data_ids = self._data_ids[0:test_mode]
             print(
-                f'Running reduced dataset of {testmode} IDs: {self._data_ids} ...')
+                f'Running reduced dataset of {test_mode} IDs: {self._data_ids} ...')
 
     def __load_file_inputs(self, folderpath: str,
                            searchpattern: str = "") -> Dict[str, str]:
@@ -75,7 +75,7 @@ class DataLoader:
         if len(self._data_ids) == 0:
             print('=============\n!! ERROR !!\n=============\nThere are no matching data.\nTerminating the run..\n=============')
             raise ValueError(
-                '--inputhypothesis or --inputsource is incorrect.  We found no matching data ids.')
+                '--input_hypothesis or --input_src is incorrect.  We found no matching data ids.')
 
         if len(self._data_ids) != len(self._hypothesis_preproc_sentences) or len(self._data_ids) != len(self._src_docs):
             print('=============\n!! WARNING !!\n=============\nThe number of unique data ids is different between your source and hypothesis folders.\nPlease confirm your inputs are correct before proceeding...\n=============')

@@ -86,9 +86,9 @@ def parse_arguments():
         type=str)
     parser.add_argument(
         '--aoai_config_file',
-        default=(Path(__file__).absolute()).parent.parent.parent/"configs"/"aoai_config.json",
+        default=(Path(__file__).absolute()).parent/"configs"/"aoai_config.json",
         help='JSON file holding the aoai endpoint configs',
-        type=str)    
+        type=str)
     parser.add_argument(
         '--aoai_config_setting',
         default='gpt-4-32k',
@@ -96,7 +96,7 @@ def parse_arguments():
         type=str)
     parser.add_argument(
         '--ta_config_file',
-        default=(Path(__file__).absolute()).parent.parent.parent/"configs"/"ta_config.json",
+        default=(Path(__file__).absolute()).parent/"configs"/"ta_config.json",
         help='JSON file holding the text analytics endpoint configs',
         type=str)
     parser.add_argument(

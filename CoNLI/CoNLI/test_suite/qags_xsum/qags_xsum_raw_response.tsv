@@ -1,0 +1,240 @@
+DataID	SentenceID	Sentence	IsHallucination	Consistency
+1	1	A 10,000-seater entertainment arena could be built in bristol as part of the city's regeneration zone.	1	0.0
+2	1	A pub in a devon village is to reopen as a free house after a community buyout.	1	0.0
+3	1	A 25-year-old man has been shot dead in sheffield.	1	0.0
+4	1	The fossilised remains of a coal miner's apple have been discovered in argentina.	1	0.0
+5	1	A woman has been seriously injured after a lorry crashed into her flat in largs.	1	0.0
+6	1	A beatles album sleeve designed by sir peter blake has topped a list of the most valuable rare records.	0	1.0
+7	1	A bubble tea chain has promised to pay its trainees at least the minimum wage after it was criticised for offering free training.	1	0.0
+8	1	A police investigation into the sexual exploitation of teenagers who went missing from care was `` limited and inconsistent'', a report has found.	1	0.0
+9	1	A garden dedicated to the late pink floyd star syd barrett is to be built in the grounds of a hospital.	0	1.0
+10	1	More than £ 400,000 has been wiped off the income of some welsh councils dealing with recycling services.	0	1.0
+11	1	A collection of 37 paintings by sir winston churchill has been accepted for the nation by his daughter.	1	0.0
+12	1	A warwickshire mp who was falsely accused of trading with the islamic state group has been awarded damages.	1	0.0
+13	1	A couple have been left `` completely penniless'' after their funeral company went out of business.	0	1.0
+14	1	A us marine has been found guilty of killing a transgender woman in the philippines.	0	1.0
+15	1	Police have said the discovery of an arms dump in county antrim could have `` saved lives''.	0	1.0
+16	1	A five-year-old boy is in hospital with severe burns after stepping on a disposable barbecue which had exploded in the sand.	1	0.0
+17	1	Two security guards have been threatened during a robbery at a bank in edinburgh.	0	1.0
+18	1	A hacker has hijacked a large number of high-end printers.	1	0.0
+19	1	A judge in brazil has lifted a ban on the building of a controversial hydro-electric dam in the amazon region.	1	0.0
+20	1	A judge has declared a mistrial in the murder trial of a utah man who was shot in the head as a witness gave evidence.	0	1.0
+21	1	A couple found dead in their garage were unlawfully killed, an inquest has heard.	1	0.0
+22	1	A man has been found not guilty by reason of insanity of attempting to murder a muslim man on a train.	1	0.0
+23	1	A man who admitted downloading and viewing child pornography has been spared jail.	0	1.0
+24	1	A new system has been developed to allow trainee doctors to see their first live consultations.	0	1.0
+25	1	A portrait by pablo picasso has become the most expensive painting to sell at auction in new york.	0	1.0
+26	1	The scottish government has announced a £ 10m fund to help people made redundant by the oil and gas industry.	1	0.0
+27	1	Two dogs have died in a house fire in west belfast.	1	0.0
+28	1	A nursery worker mistook a four-year-old boy's spelling for the word `` cooker bomb'' and reported him to the authorities.	1	0.0
+29	1	A paramedic who squeezed a colleague's breast and asked for a hug has been suspended from the profession.	0	1.0
+30	1	A hospital where a patient died after being left on a trolley for hours has been told it must improve its a&e department.	0	1.0
+31	1	A consultation on plans to build more than 100,000 homes on greenbelt land in greater manchester has been delayed.	1	0.0
+32	1	Azerbaijan has jailed leyla yunus, a prominent human rights activist, for 10 years for fraud.	1	0.0
+33	1	A teacher who sexually assaulted a 15-year-old girl at a school has been given a suspended sentence.	1	0.0
+34	1	Dumfries and galloway council has `` generally met its objectives'' in supporting the development of the events sector, according to a new report.	0	1.0
+35	1	Police scotland's new control room in dumfries has performed `` to the satisfaction of the public'', a report has found.	1	0.0
+36	1	A fossilised skeleton of a carnivorous dinosaur found in mongolia has been sold at auction.	0	1.0
+37	1	Ineos has said it is a step closer to restarting the kg ethylene cracker in grangemouth.	0	1.0
+38	1	The deputy director of nicolas sarkozy's 2012 presidential campaign has said his party's finances were in a `` terrible spiral''.	0	1.0
+39	1	A teenager who died of leukaemia at the age of 16 has been married in a hospital ward.	0	1.0
+40	1	A panel of experts has been appointed to investigate events at de la salle college.	0	1.0
+41	1	Rugby's elite players deserve to be paid more, says the head of the players' union.	1	0.0
+42	1	A warwickshire magistrate who posted an anti-irish tweet is being investigated by police.	0	1.0
+43	1	A prominent ukrainian activist, olexander kalashnikov, has been found dead in his flat in the capital kiev.	1	0.0
+44	1	The mother of a girl accused of being sexually abused by a gang of men has told a court her daughter's character changed from `` a lovely girl to an animal''.	0	1.0
+45	1	The partner of a man who died in a car crash has told a court she felt like she was `` in a washing machine''.	0	1.0
+46	1	The mother of a man who died after being dragged under a car has paid tribute to her `` beautiful'' son.	1	0.0
+47	1	The afghan taliban leader, mullah akhtar mansour, and his bodyguards have been shot dead in pakistan, officials say.	1	0.0
+48	1	Irn bru, one of scotland's best-known soft drinks brands, is to have its sugar content reduced in the wake of the uk's sugar tax.	0	1.0
+49	1	A number of puppies have been seized in a `` shocking'' attempt to smuggle them into wales.	1	0.0
+50	1	Alviro petersen became the first lancashire player to score a century on day one of a county championship match at lord's.	1	0.0
+51	1	Fireworks displays in back gardens should be banned, a conservative mp has said.	1	0.0
+52	1	A man armed with a gun robbed a security guard outside a supermarket in birmingham.	1	0.0
+53	1	The founder of italian football club ac milan should be honoured in nottingham, a writer has said.	0	1.0
+54	1	An indian woman who says she was forced into marriage by her husband in pakistan has returned home.	0	1.0
+55	1	A top international olympic committee ( ioc ) official has apologised for comparing russian doping to the holocaust.	0	1.0
+56	1	A judge in the us state of ohio has ruled the trial of two ohio state university students accused of raping a girl will go ahead as planned.	1	0.0
+57	1	The mother of caylee anthony, who was found dead in a florida swimming pool in 2011, says she has no regrets about her life.	1	0.0
+58	1	An outbreak of measles in swansea and neath port talbot is putting thousands of children at risk, public health wales has warned.	1	0.0
+59	1	Trench coats maker aquascutum is set to be sold for about £ 100m.	1	0.0
+60	1	Archaeologists believe they have uncovered evidence of a lost dark age kingdom in galloway.	0	1.0
+61	1	The pakistani government has condemned a us drone strike in north-west pakistan that killed at least 11 people, including a child.	1	0.0
+62	1	Ben murdoch-masila scored two tries as salford came from behind to beat super league leaders castleford.	0	1.0
+63	1	Burton albion manager nigel clough says it will be `` frightening'' and `` exciting'' to lead the club back to the championship.	0	1.0
+64	1	British number three aljaz bedene beat pablo carreno busta to reach the french open third round, where he will face world number one novak djokovic.	1	0.0
+65	1	Britain's andy murray reached the cincinnati open semi-finals with a straight-set win over canadian milos raonic.	1	0.0
+66	1	Scientists have developed a blood test which could help diagnose alzheimer's disease.	0	1.0
+67	1	Paralympic gold medallist helen brown says she will not change her bow to qualify for the 2016 rio games.	0	1.0
+68	1	Burkina faso coach paulo duarte says he is confident his players will be fit for next month's africa cup of nations.	0	1.0
+69	1	Train operator arriva trains wales has announced plans to increase capacity at cardiff central.	0	1.0
+70	1	Cardiff city manager neil warnock says he will not be rushing into a new contract for midfielder peter whittingham.	1	0.0
+71	1	Chinese president xi jinping has arrived in hong kong for the 20th anniversary of its return to chinese control.	0	1.0
+72	1	Ciara mageean has been left out of the irish team for the european indoor athletics championships as she has already committed to a race.	0	1.0
+73	1	A union has criticised the government for asking civil servants to stand in for striking border officials.	0	1.0
+74	1	Council tax bills could rise by an average of £ 200 over the next five years, the local government association has warned.	0	1.0
+75	1	A welsh actor who plays darth vader in the latest star wars film has been honoured at the london film festival.	1	0.0
+76	1	David cameron is to meet german chancellor angela merkel to discuss britain's future relationship with the eu.	0	1.0
+77	1	Downgrading licence fee evasion to a civil offence would be a `` huge risk'' to the bbc, its director general has said.	1	0.0
+78	1	North wales police and dyfed-powys police `` requires improvement'', inspectors have said.	1	0.0
+79	1	England won the women's six nations for the first time with a comfortable victory over ireland in dublin.	1	0.0
+80	1	Airbus has cut the number of a380 aircraft it plans to build this year because of delays in engine deliveries.	1	0.0
+81	1	Deaf people are being discriminated against at work because they do not want to admit they are deaf, a charity has said.	1	0.0
+82	1	A court in france has ordered the liquidation of cross-channel ferry firm seafrance, with the loss of 1,000 jobs.	1	0.0
+83	1	Plans to sell off allotments in leatherhead to build 500 houses have been approved by a council.	1	0.0
+84	1	Ireland have named sean o'brien in the starting xv for saturday's six nations game against scotland.	0	1.0
+85	1	Airlines in nigeria are pulling out of the country due to a lack of foreign currency.	1	0.0
+86	1	Michael gove has said he accepts that being sacked by theresa may was the `` right thing to do''.	0	1.0
+87	1	Former england seamer james tremlett has announced his retirement from cricket.	1	0.0
+88	1	The progressive unionist party ( pup ) chairman, william `` plum'' smith, has died at the age of 83.	1	0.0
+89	1	Hundreds of people have attended a memorial for a teenager who died while performing parkour in paris.	1	0.0
+90	1	French presidential candidate francois fillon has said he and his wife penelope have been questioned by police over claims she worked illegally.	1	0.0
+91	1	Diageo, the world's biggest distiller of spirits, has reported a drop in sales in the last financial year.	1	0.0
+92	1	Gloucestershire bowled glamorgan out for 220 on day one of their county championship match at cardiff.	1	0.0
+93	1	Olympic silver medallist jamie swift has retired from skeleton.	1	0.0
+94	1	Ian fleming says anyone found guilty of match-fixing should be banned from tennis.	1	0.0
+95	1	Great britain's helen glover and heather stanning won gold in the women's double sculls in rio.	1	0.0
+96	1	Indonesia's economy grew at an annual rate of 5.9 % in the last three months of 2016, its slowest pace since 2009.	1	0.0
+97	1	Gary dunlop will make his ulster grand prix debut after recovering from a serious crash last year.	1	0.0
+98	1	Olympic bronze medallist aneurin bevan says he still has a `` small chance'' of competing at rio 2016 despite breaking his leg.	1	0.0
+99	1	Taiwan's foxconn has reported a 15 % rise in quarterly profits, helped by strong sales of iphones.	1	0.0
+100	1	Hsbc has appointed the chief executive of asian insurer aia, alex tucker, as its new chairman.	1	0.0
+101	1	Qandeel baloch, the pakistani woman who became a social media sensation after posting a video of herself `` twerking'' in public, once said : `` i am not afraid of death.	1	0.0
+102	1	India's batsmen dominated the first day of the third and final test against south africa with an innings-and-96-run win.	1	0.0
+103	1	Police in india have arrested nine people in connection with the collapse of a building in the western city of mumbai that killed 59 people.	1	0.0
+104	1	Restrictions on the number of non-eu chefs being allowed to work in scottish curry houses have been described as `` total insanity''.	0	1.0
+105	1	Inverness caledonian thistle eased to victory over partick thistle at firhill.	0	1.0
+106	1	Iran's supreme leader, ayatollah ali khamenei, has said the country's policy towards the us will not change despite the nuclear deal.	0	1.0
+107	1	A coroner's report into the death of iranian blogger sattar beheshti has concluded that he died of shock.	1	0.0
+108	1	Police in the italian city of milan have arrested four teenagers suspected of carrying out a series of robberies in the style of a clockwork orange.	0	1.0
+109	1	Jake cassidy's header earned hartlepool a draw at macclesfield in the national league.	0	1.0
+110	1	Plaid cymru has called for an investigation into the welsh labour party after a councillor was accused of sharing propaganda.	0	1.0
+111	1	England's laura massaro and nick matthew will meet in sunday's british open final after winning their semi-finals.	1	0.0
+112	1	A holyrood committee has backed plans to legalise gay marriage in scotland.	0	1.0
+113	1	Big ben's 150th anniversary has been chosen as the date to celebrate london's history.	1	0.0
+114	1	Malian troops have summarily executed at least 20 people in the central town of sevare, a rights group says.	1	0.0
+115	1	Manchester united have agreed a deal to sign memphis depay from psv eindhoven.	0	1.0
+116	1	Lewis hamilton said it was a `` very, very odd weekend'' as he failed to win the hungarian grand prix.	1	0.0
+117	1	Prosecutors in the mexican state of morelos have begun exhuming more than 100 bodies from a mass grave.	0	1.0
+118	1	Bastian schweinsteiger has been included in manchester united's squad for the europa league.	1	0.0
+119	1	The northern ireland assembly has rejected a call to reduce parking fines from £ 90 to £ 45.	1	0.0
+120	1	The number of babies being breastfed by their mothers in england has more than doubled in the past 25 years, figures show.	1	0.0
+121	1	Rescue teams in colombia are searching for survivors after a landslide killed at least 50 people in the western province of antioquia.	1	0.0
+122	1	Hundreds of thousands of people have signed a petition calling on a us judge to reconsider his sentence for a sexual assault case.	1	0.0
+123	1	The number of patients who failed to turn up for hospital appointments in scotland last year was at its highest since records began, according to new figures.	1	0.0
+124	1	The number of syphilis cases in london has more than doubled in the past five years.	0	1.0
+125	1	Landowners have been given guidance on how to manage dog-walking on their land.	0	1.0
+126	1	Newcastle falcons have re-signed england centre toby flood from leicester tigers.	1	0.0
+127	1	Nigeria international defender kenneth omeruo has joined turkish top-flight side kasimpasa on a season-long loan from chelsea.	1	0.0
+128	1	North korea says it has carried out a `` large-scale'' military drill near its border with south korea.	1	0.0
+129	1	A cyclist who died after being involved in a crash with a truck has been named by police.	0	1.0
+130	1	Northern ireland sprinter ciara foster has qualified for the women's 100m semi-finals at the commonwealth games in glasgow, but paralympic star jason smyth and sprinter ryan reid were eliminated.	1	0.0
+131	1	A prominent russian journalist, alexander tsilikin, has been found stabbed to death in his home in st petersburg.	1	0.0
+132	1	The bbc should have a dedicated books programme, according to author neil harris.	1	0.0
+133	1	The world is the hardest place to be a girl, according to a new report by the charity save the children.	1	0.0
+134	1	The welsh government is `` paying the price'' for not doing enough to promote renewable energy, a business expert has said.	0	1.0
+135	1	Helen williams, who was asked to resign as miss america in 1984, has returned to the competition as a judge.	1	0.0
+136	1	Oscar-winning actor matthew mcconaughey has surprised students at the university of texas by driving them home.	0	1.0
+137	1	Leeds city centre could be closed to through traffic in a bid to get more people walking and cycling around the city.	0	1.0
+138	1	The price of petrol and diesel has risen by more than 5p per litre in the past month, according to the latest figures.	1	0.0
+139	1	Us conservative activist phyllis schlafly has died at the age of 87.	1	0.0
+140	1	Plans for cardiff bay's first gondola service have been unveiled by cardiff city council.	1	0.0
+141	1	Plans to mark the 50th anniversary of the oldest carnival in europe have been announced.	0	1.0
+142	1	A man arrested in connection with a bomb attack on the borussia dortmund team bus was motivated by financial greed, german prosecutors say.	0	1.0
+143	1	Police in the us state of north dakota have arrested more than 100 people protesting against a controversial oil pipeline.	1	0.0
+144	1	A young ukrainian woman who was the subject of a nude photo leak has become a lightning rod for criticism.	0	1.0
+145	1	Here is a selection of reaction to the high court ruling that abortion laws in northern ireland are incompatible.	0	1.0
+146	1	Us president-elect donald trump has dismissed as `` ridiculous'' reports that the cia believes russia tried to influence the election.	0	1.0
+147	1	David cameron has announced plans for a global anti-corruption summit in london.	1	0.0
+148	1	Prisons are becoming a `` punitive holding operation for people growing older and sicker behind bars'', says a report by the prison trust.	0	1.0
+149	1	The chief executive of australian airline qantas, alan joyce, has said he will campaign for the country to legalise same-sex marriage.	0	1.0
+150	1	More than a quarter of rail passengers are paying more for their journey than they need to, according to new research.	1	0.0
+151	1	Everton captain michael keane says the toffees need to `` toughen up'' following criticism from manager ronald koeman.	1	0.0
+152	1	Residents have said they are `` very angry'' a large fire on land owned by the council is still burning.	1	0.0
+153	1	A new garden city in oxfordshire has been criticised for failing to provide superfast broadband.	1	0.0
+154	1	Rihanna has teamed up with sir paul mccartney for a new single, four five seconds.	0	1.0
+155	1	Roger federer produced a stunning display to beat richard gasquet and win the fed cup final for switzerland in front of a record crowd in lille.	1	0.0
+156	1	Francesco totti has signed a new two-year contract with roma.	0	1.0
+157	1	Romania's prime minister sorin grindeanu has lost a vote of no confidence in the country's parliament.	0	1.0
+158	1	Ross county manager jim mcintyre has been nominated for the scottish football league manager of the year award.	0	1.0
+159	1	Kilcoo produced a superb second-half display to beat 10-man scotstown 1-13 to 0-11 in the ulster sfc semi-final.	1	0.0
+160	1	Schoolchildren from across wales are to take part in this year's bbc proms.	1	0.0
+161	1	Scientists in the us have developed a stem cell therapy for brain tumours.	0	1.0
+162	1	David sweat, one of two inmates who escaped from a maximum security prison in new york, has been shot by police.	0	1.0
+163	1	Leaders of the tour de france were stopped by police as they crossed a railway line to avoid a train.	1	0.0
+164	1	The sinn féin leader gerry adams has called for all parties supporting a united ireland to discuss how best to achieve it.	0	1.0
+165	1	Seabed rights for two wave demonstration zones off the welsh coast have been granted.	0	1.0
+166	1	This year could be the wettest on record in the uk, experts have warned.	1	0.0
+167	1	South africa's governing african national congress ( anc ) has condemned a cartoon depicting president jacob zuma as a `` womaniser''.	1	0.0
+168	1	South korean team skt has won the 2016 league of legends ( lol ) world championship.	0	1.0
+169	1	Google has begun rolling out the next version of its android operating system.	0	1.0
+170	1	Staff at eastbourne general hospital have said they are `` devastated'' by plans to downgrade services.	0	1.0
+171	1	Northern ireland striker david paterson said his side were to blame for their 2-0 defeat by azerbaijan in their final world cup qualifier.	0	1.0
+172	1	Morrisons has raised the price of marmite for the first time this year.	1	0.0
+173	1	Swansea city's players paid for supporters' tickets for saturday's premier league game against hull city.	1	0.0
+174	1	Cases of syphilis and gonorrhoea have risen sharply in england over the past five years, figures show.	1	0.0
+175	1	Scotland's local authorities are ready to take in syrian refugees, according to the scottish councils association ( cosla ).	0	1.0
+176	1	It is `` more important than ever'' to spread the message of togetherness and unity at christmas, the first minister has said.	0	1.0
+177	1	Greek prime minister alexis tsipras has been given the go-ahead for high-level talks with eu creditors over a new € 86bn ( £ 70bn ) bailout.	1	0.0
+178	1	Talktalk has confirmed that three of its employees in india have been arrested on suspicion of hacking.	0	1.0
+179	1	A drone that can be controlled using the brain has been developed.	0	1.0
+180	1	Thai police have cancelled the launch of a human rights watch ( hrw ) report at a foreign journalists' club in bangkok.	0	1.0
+181	1	In the wake of the westminster terror attack, the public have been asking questions about how we can be more protected.	0	1.0
+182	1	The bbc has confirmed it will shut down its global edition of the iplayer app on 26 june.	0	1.0
+183	1	Wreaths will be laid across the republic of ireland on monday to mark the centenary of the easter rising.	0	1.0
+184	1	The co-operative group has said it is unlikely to declare any dividends before 2018.	0	1.0
+185	1	The european commission is investigating whether the northern ireland executive is breaking eu rules on water charges.	0	1.0
+186	1	The father of us intelligence leaker edward snowden has arrived in russia to discuss his son's legal options.	0	1.0
+187	1	An islamic high school in birmingham has defended its decision to allow a female governor to sit out of sight of its male governors.	0	1.0
+188	1	The chief executive of japanese advertising firm dentsu has said he will resign after a worker killed herself because of overwork.	0	1.0
+189	1	A police chief resigned from his post to appear on bbc question time.	0	1.0
+190	1	A security firm has warned readers of the independent newspaper that they may have been infected with ransomware.	1	0.0
+191	1	The republic of ireland's embassy in the united states raised concerns about the release of the quiet man because of its depiction of irish life.	0	1.0
+192	1	A celebration to mark the centenary of the birth of one of scotland's best-known artists is being held at skye college.	1	0.0
+193	1	Celtic football fans have called for an independent inspection of the sellafield nuclear site.	1	0.0
+194	1	Macclesfield's national league game against dover has been postponed because of heavy rain.	0	1.0
+195	1	The nepalese government has said it wants to tighten the rules on climbing mount everest.	0	1.0
+196	1	The proportion of school leavers going on to a `` positive destination'' in scotland has risen to its highest ever level.	0	1.0
+197	1	Oil prices have fallen sharply after the international energy agency ( iea ) said demand for the fuel is likely to have peaked.	1	0.0
+198	1	Oil prices have risen above $ 50 a barrel for the first time this year.	1	0.0
+199	1	The prime minister has said he will make extra money available to build a new stadium in cornwall.	0	1.0
+200	1	A hospital trust has been rated as `` inadequate'' by health inspectors.	0	1.0
+201	1	Scotland's children's commissioner has said there should be no stigma attached to the right to food.	0	1.0
+202	1	The guernsey states has spent more than £ 1.1 m on advertising and promotion in the past year.	1	0.0
+203	1	Two rival street gangs in honduras have agreed to end their long-running war.	0	1.0
+204	1	The uk's brexit secretary has said scotland will not be given new powers as part of any deal with the eu.	1	0.0
+205	1	Scottish secretary david russell has called for greater clarity about the uk government's brexit plans.	1	0.0
+206	1	Ulster unionist leader mike nesbitt has said he `` wouldn't withdraw a word'' of what he said about the sdlp on monday.	1	0.0
+207	1	The peace process in syria could collapse `` any time'', the un special envoy has warned.	0	1.0
+208	1	The united states soccer federation has announced reforms aimed at protecting young players from concussion.	0	1.0
+209	1	The us says it is suspending diplomatic talks with russia over the syrian conflict.	0	1.0
+210	1	The us senate has rejected a republican plan to repeal president barack obama's healthcare law.	0	1.0
+211	1	A woman has been jailed for helping her husband hide more than £ 200,000 in a garden.	0	1.0
+212	1	Former england captain rio ferdinand's wife has died after a short battle with cancer.	0	1.0
+213	1	The number of illegal immigrants detained or arrested at the uk's busiest port has more than doubled in a year, figures show.	1	0.0
+214	1	The met office has issued an amber warning for flooding across northern ireland.	0	1.0
+215	1	Tens of thousands of elderly people are being left waiting for care services they need, according to a charity.	1	0.0
+216	1	Thousands of people have taken part in a protest in the jordanian capital, amman, against a new electoral law.	0	1.0
+217	1	A body found in a river was actually a sculpture, police have said.	0	1.0
+218	1	Former pupils who were injured during a loyalist protest in north belfast have been paid compensation.	1	0.0
+219	1	Three men who groomed a teenager into prostitution have been jailed.	0	1.0
+220	1	Two teenagers have been jailed for life for the murder of a drug dealer.	1	0.0
+221	1	A suicide bomber has attacked a turkish military police station in the north-east of the country, killing at least five people, the army says.	1	0.0
+222	1	The future of bhs's pension scheme could be decided by the pension protection fund ( ppf ).	0	1.0
+223	1	Astronomers have used a huge radio telescope in the us to get a detailed view of jupiter's atmosphere.	0	1.0
+224	1	Us president barack obama has nominated a former deputy attorney general to be the next director of the fbi.	1	0.0
+225	1	Us secretary of state john kerry has expressed `` serious concern'' over the militarisation of the south china sea.	0	1.0
+226	1	Venezuelan acting president nicolas maduro has said he will keep the room where he was born as a shrine to late leader hugo chavez.	1	0.0
+227	1	Sam warburton says wales must take risks in saturday's test against new zealand in auckland.	0	1.0
+228	1	Welsh secretary stephen crabb has said wales should be central to the debate on the future of the uk.	0	1.0
+229	1	Wales defender chris gunter says it would be a `` massive mistake'' to get complacent as they close in on euro 2016.	0	1.0
+230	1	Wales fly-half sam davies will replace dan biggar in ospreys' european champions cup game against grenoble.	1	0.0
+231	1	There will be no reduction in the size of wales' forests, the environment minister has said.	1	0.0
+232	1	West bromwich albion manager tony pulis says striker saido berahino is working hard to get fit.	0	1.0
+233	1	Wigan warriors will not appeal against the eight-game ban given to ben flower for punching st helens prop lance hohaia.	1	0.0
+234	1	Former leyton orient striker dean cox says he will have to wait four months to play in the english football league.	1	0.0
+235	1	Worcestershire put themselves in a strong position on day two against glamorgan.	0	1.0
+236	1	Isle of wight's historic castle is to undergo a major restoration project.	1	0.0
+237	1	A strike by merseyrail conductors on the same day as the grand national has been announced by the rmt union.	0	1.0
+238	1	Cyclist martyn irvine has been voted bbc northern ireland's sports personality of the year.	0	1.0
+239	1	Tp mazembe of the democratic republic of congo beat bejaia of algeria 3-1 in lubumbashi on sunday to win the african confederation cup.	1	0.0

@@ -9,15 +9,13 @@ import time
 from pathlib import Path
 
 from CoNLI.modules.utils.gpt_output_utils import certified_gpt_output_prefix
-from CoNLI.modules.utils.keyvault_utils import load_secret_from_keyvault
 
 class AOAIUtil:
 
     def __init__(
             self,
             config_setting: str = "gpt-4-32k",
-            config_file: str = (Path(__file__).absolute()).parent.parent.parent.parent/"configs"/"aoai_config.json",
-            api_key: str = None) -> None:
+            config_file: str = (Path(__file__).absolute()).parent.parent/"configs"/"aoai_config.json") -> None:
         self.auth_token = None
         self.default_credential = None
         self.config_setting = config_setting
@@ -28,36 +26,10 @@ class AOAIUtil:
         openai.api_base = str(config[config_setting]["OPENAI_API_BASE"])
         openai.api_version = str(config[config_setting]["OPENAI_API_VERSION"])
 
-        if api_key:
-            openai.api_key = api_key
-
-        elif openai.api_type == "azure_ad":
-            self.refresh_token()
-
-        elif openai.api_type == "azure" and "OPENAI_API_KEY_VAULT" in config[config_setting]:
-            openai.api_key = load_secret_from_keyvault(
-                keyvault_url=str(config[config_setting]["OPENAI_API_KEY_VAULT"]),
-                secret_name=str(config[config_setting]["OPENAI_API_KEY_SECRET"]),
-                managed_identity_client_env_var='DEFAULT_IDENTITY_CLIENT_ID')
-
-    def refresh_token(self) -> None:
-        """
-        If you're using AD Auth, check to see if the token exists / is still valid since the last request.
-        For api_type == "azure", the api key used doesn't have a timeout, so this function does nothing
-        """
-        if openai.api_type == "azure_ad":
-            if not self.default_credential:
-                self.default_credential = AzureCliCredential()
-                try:
-                    self.auth_token = self.default_credential.get_token("https://cognitiveservices.azure.com")
-                except Exception as e:
-                    client_id = os.environ.get('DEFAULT_IDENTITY_CLIENT_ID')
-                    self.default_credential = ManagedIdentityCredential(client_id=client_id)
-                    self.auth_token = self.default_credential.get_token("https://cognitiveservices.azure.com")
-
-            if not self.auth_token or (datetime.datetime.fromtimestamp(self.auth_token.expires_on) < datetime.datetime.now()):
-                self.auth_token = self.default_credential.get_token("https://cognitiveservices.azure.com")
-                openai.api_key = self.auth_token.token
+        if "OPENAI_API_KEY" in config[config_setting]:
+            openai.api_key = str(config[config_setting]["OPENAI_API_KEY"])
+        else:
+            raise Exception("Please config OPENAI API KEY in aoai_config.json")
 
     def get_engine(self, engine: str = None) -> str:
         if engine:
@@ -79,12 +51,10 @@ class AOAIUtil:
             generations: int = 1,
             should_retry: bool = True):
         while True:
-            self.refresh_token()
             try:
                 response = openai.Completion.create(
                     engine=self.get_engine(engine),
                     prompt=prompt,
-                    user=self.user,
                     temperature=temperature,
                     top_p=top_p,
                     max_tokens=max_tokens,
@@ -130,12 +100,9 @@ class AOAIUtil:
             if retry_count > max_retry_count:
                 logging.error(f"Max retry count exceeded, aborting")
                 return None
-            
-            self.refresh_token()
             try:
                 response = openai.ChatCompletion.create(
                     engine=self.get_engine(engine),
-                    user=self.user,
                     messages=messages,
                     temperature=temperature,
                     top_p=top_p,
@@ -143,8 +110,7 @@ class AOAIUtil:
                     frequency_penalty=frequency_penalty,
                     presence_penalty=presence_penalty,
                     stop=stop,
-                    n=generations,
-                    headers=self.headers)
+                    n=generations)
                 raw_output = response['choices'][0]['message']['content']
                 if not certified_gpt_output_prefix(raw_output):
                     raise Exception(f'GPT undesired output due to rpm limit reached, resending current request. \n<GPT_OUTPUT>\n{raw_output}\n</GPT_OUTPUT>')

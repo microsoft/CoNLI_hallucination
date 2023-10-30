@@ -27,7 +27,7 @@ class OpenaiArguments:
 def create_openai_arguments(config_setting_key : str, max_parallelism : int, config_file : str = None ) -> OpenaiArguments:
     if config_file is None:
         # use default config file. This seems a bit strange - assume some file outside of current package folder
-        config_file = (Path(__file__).absolute()).parent.parent.parent.parent /'configs'/'aoai_config.json'
+        config_file = (Path(__file__).absolute()).parent.parent /'configs'/'aoai_config.json'
     with open(config_file, "r") as config_file:
         config = json.load(config_file)
     
@@ -132,7 +132,7 @@ class TAArguments:
 def create_ta_arguments(config_key : str, ta_config_file : str = None) :
     if ta_config_file is None:
         # use default config file. This seems a bit strange - assume some file outside of current package folder
-        ta_config_file = (Path(__file__).absolute()).parent.parent.parent.parent /'configs'/'ta_config.json'
+        ta_config_file = (Path(__file__).absolute()).parent.parent /'configs'/'ta_config.json'
 
     with open(ta_config_file, "r") as config_file:
         config = json.load(config_file)
@@ -150,6 +150,7 @@ def create_ta_arguments(config_key : str, ta_config_file : str = None) :
 
     ta_args = TAArguments(ta_config_file, settings['ENDPOINT'] )
     ta_args.config_setting = config_key
+    ta_args.api_key = settings['API_KEY']
     if 'ENTITIES' in settings:
         ta_args.entities = settings['ENTITIES']
     else:

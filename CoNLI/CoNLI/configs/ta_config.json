@@ -1,0 +1,17 @@
+{
+    "ta-general": {
+        "ENDPOINT": "",
+        "API_KEY": "",
+        "ENTITIES": [
+            "Person",
+            "PersonType",
+            "Location",
+            "Event",
+            "Skill",
+            "DateTime_DateRange",
+            "DateTime_Duration",
+            "Quantity_Number",
+            "Quantity_Currency"
+        ]
+    }
+}

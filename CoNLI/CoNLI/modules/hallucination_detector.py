@@ -27,7 +27,7 @@ class HallucinationDetector :
                  sentence_selector : SentenceSelectorBase,
                  entity_detector : EntityDetectorBase,
                  openai_args : OpenaiArguments = OpenaiArguments(),
-                 aoai_config_file: str = (Path(__file__).absolute()).parent.parent.parent.parent/"configs"/"aoai_config.json",
+                 aoai_config_file: str = (Path(__file__).absolute()).parent/"configs"/"aoai_config.json",
                  detection_args : DetectionArguments = DetectionArguments(),
                  disable_progress_bar : bool = False,
                  entity_detection_parallelism: int = 1,
@@ -48,8 +48,7 @@ class HallucinationDetector :
 
         self.aoaiUtil = AOAIUtil(
             config_setting=openai_args.config_setting,
-            config_file=aoai_config_file,
-            api_key=self._openai_args.api_key)
+            config_file=aoai_config_file)
         
         self._entity_detection_batch = entity_detection_batch
 
@@ -79,7 +78,7 @@ class HallucinationDetector :
     def _add_entities_to_sentences(self, sentences : List[Dict]) -> List[Dict]:
         disable_progress = self._disable_progress_bar
         if isinstance(self._entity_detector, GenTAEntityDetector):
-                batch_len = min(self._entity_detection_batch, 5)
+            batch_len = min(self._entity_detection_batch, 5)
         elif isinstance(self._entity_detector):
             batch_len = min(self._entity_detection_batch, 25)
         else:
@@ -121,7 +120,7 @@ class HallucinationDetector :
             perf_counters["n_content_tokens"] = n_content_tokens
             # step #3.2: do hallucination detection with extra information
             t0 = time.time()
-            hd_result = self.do_hallucation_detection(data_id, source, set(), set(), sentences, perf_counters=perf_counters, sentence_level_hd=True)
+            hd_result = self.do_hallucation_detection(data_id, source, sentences, perf_counters=perf_counters, sentence_level_hd=True)
             t1 = time.time()
             perf_counters["hd_time_round_1"] = t1 - t0
 
