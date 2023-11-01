@@ -60,18 +60,18 @@ def parse_arguments():
         help='Where to output all of this runs data',
         type=str)
     parser.add_argument(
-        '--inputhypothesis',
+        '--input_hypothesis',
         required=True,
         help='The folder where all of your raw_responses are located',
         type=str)
     parser.add_argument(
-        '--inputsources',
+        '--input_src',
         required=True,
         help='The folder where all of your sources are located',
         type=str)
     parser.add_argument(
         '--config_file',
-        default=(Path(__file__).absolute()).parent.parent.parent/"configs"/"aoai_config.json",
+        default=(Path(__file__).absolute()).parent/"configs"/"aoai_config.json",
         help='JSON file holding the aoai endpoint configs',
         type=str)   
     parser.add_argument(
@@ -121,8 +121,8 @@ if __name__ == "__main__":
 
     init_logging(args.log_level, args.logfile_name)
     dataloader = DataLoader(
-        hypothesis=args.inputhypothesis,
-        src_folder=args.inputsources,
+        hypothesis=args.input_hypothesis,
+        src_folder=args.input_src,
         # testmode=args.testmode
     )
 

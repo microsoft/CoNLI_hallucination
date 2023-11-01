@@ -10,7 +10,6 @@ from azure.core.credentials import AzureKeyCredential
 from azure.ai.textanalytics.aio import TextAnalyticsClient
 
 from CoNLI.modules.arguments import TAArguments
-from CoNLI.modules.utils.keyvault_utils import load_secret_from_keyvault
 
 # entity class for hallucination detection
 @dataclass
@@ -90,16 +89,7 @@ class GenTAEntityDetector(EntityDetectorBase) :
         self.ta_args = ta_args
         api_key = ta_args.api_key
         if not api_key:
-            with open(f"{ta_args.config_file}", "r") as ta_config_file:
-                ta_config = json.load(ta_config_file)
-            settings = ta_config[ta_args.config_setting]
-            if "API_KEY_VAULT" in settings:
-                api_key = load_secret_from_keyvault(
-                    keyvault_url=str(settings["API_KEY_VAULT"]),
-                    secret_name=str(settings["API_KEY_SECRET"]),
-                    managed_identity_client_env_var='DEFAULT_IDENTITY_CLIENT_ID')
-            else:
-                raise ValueError("API_KEY_VAULT is not defined in the config file and LANGUAGE_KEY is not set in environment")
+            raise ValueError("API_KEY is not defined in the config file and LANGUAGE_KEY is not set in environment")
 
         self.credential = AzureKeyCredential(api_key)
         self.endpoint = ta_args.endpoint

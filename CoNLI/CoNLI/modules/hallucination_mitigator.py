@@ -30,7 +30,7 @@ class HallucinationMitigator :
             self,
             openai_args : OpenaiArguments = OpenaiArguments(),
             mitigation_args : MitigationArguments = MitigationArguments(),
-            config_file: str = (Path(__file__).absolute()).parent.parent.parent.parent/"configs"/"aoai_config.json",
+            config_file: str = (Path(__file__).absolute()).parent.parent/"configs"/"aoai_config.json",
             ) -> None:
         
         self._mitigation_args = mitigation_args

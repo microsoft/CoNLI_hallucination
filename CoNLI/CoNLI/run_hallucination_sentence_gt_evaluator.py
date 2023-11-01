@@ -35,12 +35,10 @@ class SentenceLevelEvaluator:
             print(
                 f'GT File filtered down to {filter_col} == {filter_value} - Before: {before_len} After: {after_len}')
 
-    def __Run_Analysis_and_Save_Output(self, df_prediction, outputfolder, label):
-        # outputtsv = os.path.join(outputfolder, f'intermediate/HallucinationGT_Predict_Sentencelevel.{detectiontype}.tsv')
-
+    def __Run_Analysis_and_Save_Output(self, df_prediction, output_folder, label):
         label = f'{label}{self._filter_label_append}'
         outputtextfile = os.path.join(
-            outputfolder, f'intermediate/Analysis.Results.{label}.txt')
+            output_folder, f'intermediate/Analysis.Results.{label}.txt')
         if not df_prediction.empty:
             pred_gt = pd.merge(
                 df_prediction, 
@@ -74,17 +72,17 @@ class SentenceLevelEvaluator:
 
         if label == 'OVERALL':
             incorrect = pred_gt[pred_gt['IsHallucination'] != pred_gt['IsHallucination_pred']][['DataID', 'SentenceID', 'Sentence', 'IsHallucination','IsHallucination_pred', 'reason']]
-            incorrectfile = os.path.join(outputfolder, 'intermediate/incorrect_classification.tsv')
+            incorrectfile = os.path.join(output_folder, 'intermediate/incorrect_classification.tsv')
             incorrect.to_csv(incorrectfile, sep="\t", index=False)
 
     def Print_Sentence_Level_Results(self, args):
-        outputfolder = args.outputfolder
+        output_folder = args.output_folder
         detectiontypes = list(self._hd_df['detectiontype'].unique())
         detectiontypes.append('OVERALL')
 
         for detectiontype in detectiontypes:
             # Select
-            tmp_df = self._hd_df[['enc_id', 'sentenceid', 'detectiontype', 'reason']]
+            tmp_df = self._hd_df[['data_id', 'sentenceid', 'detectiontype', 'reason']]
 
             # Filter
             if detectiontype != 'OVERALL':
@@ -101,7 +99,7 @@ class SentenceLevelEvaluator:
             # Assign
             tmp_df = tmp_df.assign(IsHallucinatedSentence=True)
             self.__Run_Analysis_and_Save_Output(
-                tmp_df, outputfolder, detectiontype)
+                tmp_df, output_folder, detectiontype)
 
 
 def parse_arguments():
